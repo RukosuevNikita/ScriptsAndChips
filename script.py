@@ -1,4 +1,7 @@
 import os
+import paramiko
+
+
 
 def firstdiag():
 
@@ -9,7 +12,7 @@ def firstdiag():
     nslookup = (os.system('whois ' + data +' | sed -n "/domain/,/source/p" ' ))
     invite = input('Enter to user folder? - y\nQuit - q: ')
     if invite == 'y':
-        firstdiag()
+        
     if invite == 'q':
         pass
 
