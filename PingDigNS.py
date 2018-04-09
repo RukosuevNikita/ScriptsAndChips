@@ -5,7 +5,7 @@ import os
 #dig returns only sections that matter
 #nslookup as dig
 
-def bunch():
+def commands():
     ping = (os.system('ping -c 2 ' + data  ))
     dig = (os.system('dig ANY ' + data +' |sed -n "/ANSWER SECTION:/,/Query time:/p"'))
     nslookup = (os.system('whois ' + data +' | sed -n "/domain/,/source/p" ' ))
@@ -13,4 +13,4 @@ def bunch():
 
 if __name__ == '__main__':
     data = input('Enter site: ')
-    bunch()
+    commands()
