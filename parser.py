@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from bs4 import BeautifulSoup
 import urllib
 
@@ -27,22 +26,3 @@ def Pager(SITE):
 
 Parser(SITE)
 #Pager(SITE)
-=======
-import urllib.request
-from bs4 import BeautifulSoup
-
-def get_html(url):
-    response = urlib.request.urlopen(url)
-    return response.read()
-
-def parse(html):
-    soup = BeautifulSoup(hm)
-    table = soup.find('div', id='content')
-    print(table.prettify())
-
-def main():
-    parse(get_html('http://hosting101.ru/hoster.ru'))
-
-if __name__ == '__main__':
-    main()
->>>>>>> 84a4055bc5c6ff6fb48b3e5e69ed26cdc943a47c
