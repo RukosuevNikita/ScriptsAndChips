@@ -1,5 +1,5 @@
 # ScriptsAndChips
-There is my workscripts and code-sketch's.
+Here a few scripts thats help me in my workprocess!
 
 
 <h2>PingDigNS:</h2>
