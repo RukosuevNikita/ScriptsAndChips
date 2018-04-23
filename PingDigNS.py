@@ -1,5 +1,6 @@
 import os
 
+
 #Return console command's: ping, dig ANY and whois.
 #ping delivers only 2 packages
 #dig returns only sections that matter

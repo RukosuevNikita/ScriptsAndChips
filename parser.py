@@ -7,11 +7,9 @@ def Parser(SITE):
     soup = BeautifulSoup(downPage,'html.parser')
     sorting = soup.find('div',id='comments')
     reviews = sorting.find_all('div','content')[:-1]
-
     for each in reviews:
         comment = each.find_all('p')
         total = '{}'.format(comment).replace('[<p>',' ').replace('</p>]', ' ')
-
         with open('reviews.txt','a') as f:
             f.write(total + '\n\n')
         print(total)
