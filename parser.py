@@ -14,7 +14,7 @@ def Parser(SITE):
     for each in reviews:
         comment = each.find_all('p')
         total = '{}'.format(comment).replace('[<p>',' ').replace('</p>]', ' ')
-        with open('reviews.txt','a') as f: # Write all reviews in file.txt
+        with open('reviews.txt','a') as f: 
             f.write(total + '\n\n')
         print(total)
 
