@@ -12,7 +12,7 @@ nslookup as a dig ANY.
 For ease to use i recommend creating alias in .bashrc, example:
 alias 'diag'='python3 ~/path/to/script.py'
 
-<h1>Parser.py:/h1>
+<h1>Parser.py:</h1>
 
 Parser for reviews on the hosting101.ru. 
 Write all reviews in text file that will be created in the same directory where the script is located.
