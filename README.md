@@ -5,8 +5,8 @@ Here a few scripts thats help me in my workprocess!
 <h2>PingDigNS:</h2>
 
 Script for fast output 3 console commands: ping, dig ANY, nslookup.
-Ping send to server 2 packages
-dig ANY returns only sections that matter
+Ping send to server 2 packages,
+dig ANY returns only sections that matter,
 nslookup as a dig ANY.
 
 For ease to use i recommend creating alias in .bashrc, example:
