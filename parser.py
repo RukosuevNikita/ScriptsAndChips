@@ -23,3 +23,4 @@ if __name__ == '__main__':
         SITE = 'http://hosting101.ru/hoster.ru?page={}'.format(i) # Here you can change site
         Parser(SITE)
 
+# P.S. I know that i can reqest pagepool from html page as self-contained function, but there is no needed in my work.
