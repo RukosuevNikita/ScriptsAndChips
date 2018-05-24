@@ -1,34 +1,26 @@
+#!/usr/bin/env python3
 from datetime import datetime,date
+from dateutil import relativedelta
 
-#Description
-print('All date are entered in format DD.MM.YYYY')
-
-#Input date's
 birthinput = input('Enter your date of birth: ')
-receiptinput = input('Enter the date of receipt of your passport: ')
-#parse date in format DD.MM.YYYY
-birthdate = datetime.strptime(birthinput,"%d.%m.%Y")
-passdate = datetime.strptime(receiptinput,"%d.%m.%Y")
-#subtraction years and month from birthday to passport receiving
-age = passdate.year - birthdate.year
-months = passdate.month - birthdate.month
-#Algorithm
-def main(age,months):
-    if age >= 14 and months >= 1:
-        print('Yes')
-    elif age >= 20 and months <= 0:
-        print('No')
-    elif age >= 20 and months >= 1:
-        print('Yes')
-    elif age >= 40 and months <= 0:
-        print('No')
-    elif age >= 40 and months >= 1:
-        print('Yes')
-    else:
-        print('No')
+passinput = input('Enter the date of receipt of your passport: ')
+
+
+today = datetime.today()
+birthday = datetime.strptime(birthinput,"%d.%m.%Y")
+passday = datetime.strptime(passinput,"%d.%m.%Y")
+
+age = relativedelta.relativedelta(today,birthday)
+pass_age = relativedelta.relativedelta(passday,birthday)
+
+def difference(today,age,pass_age):
+        if age.years < 14:
+                return False
 
 
 
-#Output
-if __name__ == '__main__':
-    main(age,months)
+        else:
+                return True
+
+if __name__ == "__main__":
+        difference(today,age,pass_age)
