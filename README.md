@@ -16,3 +16,9 @@ alias 'diag'='python3 ~/path/to/script.py'
 
 Parser for reviews on the hosting101.ru. 
 Write all reviews in text file that will be created in the same directory where the script is located.
+
+<h2>Validator.py</h2>
+
+Simple validator if your passport. Just enter date when you was born and passport receiving date in formad DD.MM.YYYY
+and if validator return True - your passport is valid, else - not.
+The validator was made as a job to the vacancy.
